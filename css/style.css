@@ -176,6 +176,7 @@ textarea.form-control {
 
 .site-hero {
   background-size: cover;
+  background-position: center;
   height: 100vh;
   min-height: 700px;
   width: 100%;
