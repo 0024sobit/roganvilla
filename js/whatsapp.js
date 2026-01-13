@@ -12,7 +12,7 @@ document.getElementById("availabilityform").addEventListener("submit", function(
         "Check-in: " + checkin + "%0A" +
         "Check-out: " + checkout + "%0A" +
         "Adults: " + adults + "%0A" +
-        "Children: " + children;
+        "Children: " + children; 
 
     let whatsappNumber = "9656017532"; // your WhatsApp number
 
