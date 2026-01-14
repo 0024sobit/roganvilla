@@ -14,7 +14,7 @@ document.getElementById("availabilityform").addEventListener("submit", function(
         "Adults: " + adults + "%0A" +
         "Children: " + children; 
 
-    let whatsappNumber = "9656017532"; // your WhatsApp number
+    let whatsappNumber = "9820976111"; // your WhatsApp number
 
     let whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + message;
 
