@@ -1270,3 +1270,23 @@ textarea.form-control {
         background: #ffba5a;
         color: #fff;
         border-radius: 50%; }
+
+        .mapsmall{
+          display: flex;
+          margin-bottom: 40px;
+          width: 100vw;
+          align-items: center;
+          justify-content: center;
+          height: 500px;
+          flex-direction: column;
+        }
+        @media (min-width: 991.98px){
+          .mapsmall{
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 60px;
+          }
+          .mapsmal{
+            display: hidden;
+          }
+        }
