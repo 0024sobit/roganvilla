@@ -1,9 +1,8 @@
-
 document.getElementById("availabilityform").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    let checkin = document.getElementById("checkin_date").value;
-    let checkout = document.getElementById("checkout_date").value;
+    let checkin = document.getElementById("checkin_date").value.split(",")[0];
+    let checkout = document.getElementById("checkout_date").value.split(",")[0];
     let adults = document.getElementById("adults_select").value;
     let children = document.getElementById("children_select").value;
 
@@ -12,12 +11,11 @@ document.getElementById("availabilityform").addEventListener("submit", function(
         "Check-in: " + checkin + "%0A" +
         "Check-out: " + checkout + "%0A" +
         "Adults: " + adults + "%0A" +
-        "Children: " + children; 
+        "Children: " + children;
 
-    let whatsappNumber = "9820976111"; // your WhatsApp number
+    let whatsappNumber = "919820976111"; // include country code (91)
 
     let whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + message;
 
     window.open(whatsappURL, "_blank");
 });
-
