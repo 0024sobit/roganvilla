@@ -80,14 +80,14 @@
     </section>
     <!-- END section -->
 
-    <section class="section bg-light pb-0"  >
+    <section class="section pb-4">
       <div class="container">
        
         <div class="row check-availabilty" id="next">
           <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
 
             <form action="#" id="availabilityform">
-             <div class="row">
+  <div class="row">
 
     <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
       <label for="checkin_date" class="font-weight-bold text-black">Check In</label>
@@ -108,43 +108,32 @@
     <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
       <div class="row">
         <div class="col-md-6 mb-3 mb-md-0">
-          <label for="adults_select" class="font-weight-bold text-black">Adults</label>
+          <label for="adults_select"  class="font-weight-bold text-black">Adults</label>
           <div class="field-icon-wrap">
-            <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-            <select id="adults_select" class="form-control" required>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4+">4+</option>
-            </select>
+             <input type="number" id="adults_select"  class="form-control"
+            min="0" max="25" placeholder="Number of children" required>
           </div>
         </div>
 
         <div class="col-md-6 mb-3 mb-md-0">
           <label for="children_select" class="font-weight-bold text-black">Children</label>
           <div class="field-icon-wrap">
-            <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-            <select id="children_select" class="form-control" required>
-              <option value="0">0</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4+">4+</option> 
-            </select>
+            <input type="number" id="children_select"  class="form-control"
+            min="0" max="25" placeholder="Number of children" required>
+
           </div>
         </div>
-      </div>
+      </div> 
     </div>
 
     <div class="col-md-6 col-lg-3 align-self-end">
       <button type="submit" class="btn btn-primary btn-block text-white">
-        Check Availability 
+        Check Availability
       </button>
     </div>
 
   </div>
 </form>
-
           </div>
 
 
