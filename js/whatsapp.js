@@ -7,15 +7,17 @@ document.getElementById("availabilityform").addEventListener("submit", function(
     let children = document.getElementById("children_select").value;
 
     let message =
-        "Hello, I would like to check availability:%0A" +
-        "Check-in: " + checkin + "%0A" +
-        "Check-out: " + checkout + "%0A" +
-        "Adults: " + adults + "%0A" +
-        "Children: " + children;
+`Hello, I would like to check availability.
+Check-in: ${checkin}
+Check-out: ${checkout}
+Adults: ${adults}
+Children: ${children}`;
 
-    let whatsappNumber = "919820976111"; // include country code (91)
 
-    let whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + message;
+     let whatsappNumber = "916235443773";
+
+    let whatsappURL =
+      "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
 
     window.open(whatsappURL, "_blank");
 });
