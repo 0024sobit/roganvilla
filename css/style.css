@@ -1284,7 +1284,7 @@ textarea.form-control {
           .mapsmall{
             width: 80%;
             margin: 0 auto;
-            margin-bottom: 60px;
+            margin-bottom: 60px; 
           }
           .mapsmal{
             display: hidden;
@@ -1293,11 +1293,17 @@ textarea.form-control {
         .videos
         {
           padding: 10px 10px;
-          height: 80%;
+          /* height: 400px; */
+        }
+        .videos video{
+          /* height: 350px;  */
         }
         @media (min-width:991.98px) {
           .videos{
             padding: 20px 60px;
-
+            height: 640px;
+          }
+          .videos video{
+            height: 640px; 
           }
         }
