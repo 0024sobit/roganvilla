@@ -1307,3 +1307,18 @@ textarea.form-control {
             height: 640px; 
           }
         }
+        .responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  /* margin: 0 auto; */
+}
+
+.img-box {
+  width: 100%;
+  max-width: 300px; /* control size */
+  /* margin: 0 auto; */
+}
+.sectio{
+  padding: 2rem 0;
+}
